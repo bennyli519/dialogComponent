@@ -1,0 +1,19 @@
+<view>
+    <button catchtap='_onShowModal'>基础模态</button>   
+</view>
+<dialog id="modal"
+            title="这里是标题"
+            cancelText="再想想"
+            confirmText="确认提交"
+            bind:cancelEvent="_cancelEvent"  
+            bind:confirmEvent="_confirmEventFirst" 
+            >
+
+    <view class='modal-body'>
+        <view> 这是自定义内容1 </view>     
+        <view> 这是自定义内容2 </view>    
+        <view> 这是自定义内容3 </view>    
+    </view>
+
+</dialog>
+
